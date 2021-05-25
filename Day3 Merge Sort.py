@@ -1,4 +1,6 @@
 # Python program for implementation of MergeSort
+#Time Complexity -- Best case :-> omega(nlogn), Average case --> theta(nlogn) and Worst case = O(nlogn)
+# Space Complexity -- O(n) #out place algorithm
 def mergeSort(arr):
   ## Moving Top to Bottom in a Recursive Tree -> Whiteboard
 	if len(arr) > 1:
