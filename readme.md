@@ -6,3 +6,6 @@ Given a list of numbers and a number N find if two pairs exist in list of number
 
 ### Day2:- 24 may
 Bubble Sort Algorithm
+
+### Day3:- 25 may
+Merge Sort Algorithm
