@@ -9,3 +9,6 @@ Bubble Sort Algorithm
 
 ### Day3:- 25 may
 Merge Sort Algorithm
+
+### Day4:- 26 may
+Selection Sort Algorithm
