@@ -1,3 +1,6 @@
+# Python program for implementation of Quick Sort
+# Time Complexity -- Best case :-> omega(nlogn), Average case --> theta(nlogn) and Worst case = O(n^2)
+# Space Complexity -- O(n)
 def partition(arr, pivot):
     # 0 to j-1 <= Pivot
     # j to i-1 > pivot
@@ -14,20 +17,21 @@ def partition(arr, pivot):
             i += 1
             j += 1
     # print(j)
-    return (j-1)
+    return (j - 1)
+
 
 def quick_sort(arr, lo, hi):
-    if lo >= hi: #at the time of partioting if len of arr =1 or 0 return None
+    if lo >= hi:  # at the time of partioting if len of arr =1 or 0 return None
         return
-    pivot = arr[hi] #F.R pivot alwys Last index
-    pi = partition(arr, pivot) #lo = start, hi = end
-    quick_sort(arr, lo, pi-1)#partioning call
-    quick_sort(arr, pi+1, hi)
+    pivot = arr[hi]  # F.R pivot alwys Last index
+    pi = partition(arr, pivot)  # lo = start, hi = end
+    quick_sort(arr, lo, pi - 1)  # partioning call
+    quick_sort(arr, pi + 1, hi)
     return arr
 
 
 arr = [4, 3, 2, 1, 9, 6, 7, 8]
 # print(partition(arr, arr[3]))
 lo = 0
-hi = len(arr)-1
-print(quick_sort(arr,lo,hi))
+hi = len(arr) - 1
+print(quick_sort(arr, lo, hi))
